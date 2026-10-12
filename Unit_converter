@@ -1,0 +1,24 @@
+print(" UNIT CONVERTER")
+print("1. Kilometers to Miles")
+print("2. Miles to Kilometers")
+print("3. Celsius to Fahrenheit")
+print("4. Fahrenheit to Celsius")
+choice = input("Choose an option (1-4): ")
+if choice == "1":
+    kilometers = float(input("Enter kilometers: "))
+    miles = kilometers * 0.621371
+    print("Miles:", miles)
+elif choice == "2":
+    miles = float(input("Enter miles: "))
+    kilometers = miles / 0.621371
+    print("Kilometers:", kilometers)
+elif choice == "3":
+    celsius = float(input("Enter temperature in Celsius: "))
+    fahrenheit = (celsius * 9 / 5) + 32
+    print("Fahrenheit:", fahrenheit)
+elif choice == "4":
+    fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+    celsius = (fahrenheit - 32) * 5 / 9
+    print("Celsius:", celsius)
+else:
+    print("Invalid option.")
